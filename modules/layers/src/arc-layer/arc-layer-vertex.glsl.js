@@ -144,7 +144,7 @@ void main(void) {
   vec4 curr;
   vec4 next;
 
-  if (greatCircle || project_uProjectionMode == PROJECTION_MODE_GLOBE) {
+  if ((greatCircle || project_uProjectionMode == PROJECTION_MODE_GLOBE) && project_uCoordinateSystem == COORDINATE_SYSTEM_LNGLAT) {
     vec3 source = project_globe_(vec3(instanceSourcePositions.xy, 0.0));
     vec3 target = project_globe_(vec3(instanceTargetPositions.xy, 0.0));
     float angularDist = getAngularDist(instanceSourcePositions.xy, instanceTargetPositions.xy);

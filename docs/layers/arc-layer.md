@@ -90,7 +90,7 @@ Inherits from all [Base Layer](/docs/api-reference/layer.md) properties.
 
 * Default: `false`
 
-If `true`, create the arc along the shortest path on the earth surface. This option only works with data in the `LNGLAT` coordinate system.
+If `true`, create the arc along the shortest path on the earth surface. This option is only effective with data in the `LNGLAT` coordinate system.
 
 ##### `widthUnits` (String, optional)
 
